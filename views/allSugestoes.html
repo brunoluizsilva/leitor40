@@ -1,0 +1,16 @@
+  {% for sugestao in sugestoes  %}
+
+            <div class="sugestao">
+              <img 
+                src="{{sugestao.image}}" 
+                alt="Imagem de {{sugestao.title}}">
+              <div class="content">
+                <h3>{{sugestao.title}}</h3>
+                <p>{{sugestao.category}}</p>
+                <div class="description">
+                  {{sugestao.description}}
+                </div>
+                <a href="{{sugestao.link}}" target="_blank">Ler online</a>
+              </div>
+            </div>
+          {% endfor %}

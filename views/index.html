@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<section id="intro">
+        
+  <header>
+    <a href="/">
+      <img src="/logo.svg" alt="Logomarca">
+    </a>
+  </header>
+  
+  <main>
+    <p>
+      Nesse momento difícil, é importante seguirmos os procedimentos de segurança para preservamos a nossa saúde.
+    </p>
+
+    <p>
+      Com o objetivo de ajudar você, caro(a) leitor, iremos catalogar e sugerir a leitura de diversos livros enquanto você permanece em quarentena.
+      
+    </p>
+    
+    <p>
+      Clique em ver sugestões para ver os livros cadastrados ou contribua adicioando uma sugestão de leitura.
+    </p>
+  </main>
+
+ <section id="buttons">
+    <button onclick="onOff()"> + Adicionar Livro</button>
+    <a href="/sugestoes" class="button">Ver Sugestões</a>
+ </section>
+
+ <footer id="footer">
+  <span>Adaptado por: <a href="https://www.linkedin.com/in/brunofrontend/" target="_blank">Bruno</a></span>
+ </footer>
+
+</section>
+
+<section id="sugestoes">
+  {% include "allSugestoes.html" %}
+</section>
+
+{% endblock %}
